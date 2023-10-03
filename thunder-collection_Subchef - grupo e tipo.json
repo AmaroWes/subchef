@@ -1,0 +1,191 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Subchef - grupo e tipo",
+    "dateExported": "2023-10-03T05:14:57.039Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Grupo",
+            "containerId": "",
+            "created": "2023-10-03T03:42:40.161Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Tipo",
+            "containerId": "",
+            "created": "2023-10-03T03:42:40.162Z",
+            "sortNum": 12500
+        }
+    ],
+    "requests": [
+        {
+            "_id": "df331224-bc2e-4a08-941d-34bf03694a37",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Criar Grupos",
+            "url": "http://localhost:1337/api/grupos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-03T03:42:40.161Z",
+            "modified": "2023-10-03T05:12:37.702Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Legumes\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d41d6205-d594-43f2-bd7b-821a8fb263dc",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Criar Tipos",
+            "url": "http://localhost:1337/api/tipos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-03T03:42:40.162Z",
+            "modified": "2023-10-03T05:14:02.422Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Litro\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dda1cb75-c64d-4998-bb40-d42dff2ebe07",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Buscar Grupos",
+            "url": "http://localhost:1337/api/grupos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-03T03:42:40.163Z",
+            "modified": "2023-10-03T03:48:05.348Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "769759ad-2f02-4bfd-86ed-4fd0290f7c21",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Buscar Tipos",
+            "url": "http://localhost:1337/api/tipos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-03T03:42:40.164Z",
+            "modified": "2023-10-03T03:53:51.491Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbd2bc21-c08b-4b2d-9083-88ee880ca49e",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Buscar Grupos por ID",
+            "url": "http://localhost:1337/api/grupos/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-03T03:42:40.165Z",
+            "modified": "2023-10-03T05:12:53.428Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aa0445bc-b618-4842-acc8-cb8940bfe081",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Buscar Tipos por ID",
+            "url": "http://localhost:1337/api/tipos/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-03T03:42:40.166Z",
+            "modified": "2023-10-03T05:14:15.183Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "1",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2c8a2244-e7be-434b-a1d8-8d071c1173d4",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Deletar Grupos",
+            "url": "http://localhost:1337/api/grupos/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-03T03:42:40.167Z",
+            "modified": "2023-10-03T05:13:01.307Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5fd5c14f-b299-48a8-aa28-7ae2cc83a4d9",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Deletar Tipos",
+            "url": "http://localhost:1337/api/tipos/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-03T03:42:40.168Z",
+            "modified": "2023-10-03T05:14:23.924Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "701e3b98-3f1f-483a-965b-c00100e2a618",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "800b74a8-29dd-4e62-a717-5084509b253b",
+            "name": "Atualizar Grupos",
+            "url": "http://localhost:1337/api/grupos/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-03T03:42:40.169Z",
+            "modified": "2023-10-03T05:13:24.049Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Lol\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b1022cf-c126-4d2a-beac-138c82076726",
+            "colId": "dd43dba3-6948-43dc-bd57-6283ea152ff8",
+            "containerId": "f9fbc013-9ae2-4ba4-86d2-fb38403ee600",
+            "name": "Atualizar Tipos",
+            "url": "http://localhost:1337/api/tipos/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-03T03:42:40.170Z",
+            "modified": "2023-10-03T05:14:34.178Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Lol\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

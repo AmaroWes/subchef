@@ -1,0 +1,184 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Subchef - produto e fornecedor",
+    "dateExported": "2023-10-03T05:15:20.863Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Produto",
+            "containerId": "",
+            "created": "2023-10-03T03:31:06.338Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Fornecedor",
+            "containerId": "",
+            "created": "2023-10-03T03:39:41.745Z",
+            "sortNum": 12500
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e510dc43-2b13-4c61-8a67-fd67f21c05cb",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Criar Produtos",
+            "url": "http://localhost:1337/api/produtos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-03T03:31:18.250Z",
+            "modified": "2023-10-03T04:44:31.869Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"fornecedors\": {\n      \"disconnect\": [],\n      \"connect\": [\n        {\n          \"id\": 1,\n          \"position\": {\n            \"end\": true\n          }\n        }\n      ]\n    },\n    \"grupos\": {\n      \"disconnect\": [],\n      \"connect\": [\n        {\n          \"id\": 1,\n          \"position\": {\n            \"end\": true\n          }\n        }\n      ]\n    },\n    \"tipos\": {\n      \"disconnect\": [],\n      \"connect\": [\n        {\n          \"id\": 1,\n          \"position\": {\n            \"end\": true\n          }\n        }\n      ]\n    },\n    \"Name\": \"Louro\",\n    \"Quantidade\": 30,\n    \"Validade\": \"2023-10-27\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bc02acf3-c90e-407d-a019-269bbfe1794f",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Criar Fornecedor",
+            "url": "http://localhost:1337/api/fornecedors",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-03T03:39:41.745Z",
+            "modified": "2023-10-03T04:43:32.754Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Mercado\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d2de9ce-ff5d-4404-9c5a-e8866153d84b",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Buscar Produto",
+            "url": "http://localhost:1337/api/produtos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-03T03:32:41.185Z",
+            "modified": "2023-10-03T03:33:12.187Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a22b6ed3-43a3-4f21-8b9d-21d59a6b1c68",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Buscar Fornecedor",
+            "url": "http://localhost:1337/api/fornecedors",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-03T03:39:41.746Z",
+            "modified": "2023-10-03T03:44:27.673Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c65cae8e-fcd9-463d-86ca-11397ed9c7cb",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Buscar Produtos por ID",
+            "url": "http://localhost:1337/api/produtos/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-03T03:34:08.642Z",
+            "modified": "2023-10-03T04:50:00.721Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "48ef6f91-bbc3-4ebc-bdef-888b0ff31928",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Buscar Fornecedor por ID",
+            "url": "http://localhost:1337/api/fornecedors/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-03T03:39:41.748Z",
+            "modified": "2023-10-03T05:10:08.301Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae41a5d8-4540-4422-ad7e-dc6ed13b3410",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Deletar Produto",
+            "url": "http://localhost:1337/api/produtos/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-03T03:36:10.154Z",
+            "modified": "2023-10-03T04:50:09.587Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ec437369-9b05-4e65-ba43-dab2c9e90c7d",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Deletar Fornecedor",
+            "url": "http://localhost:1337/api/fornecedors/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-03T03:39:41.749Z",
+            "modified": "2023-10-03T05:10:43.122Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d77b8d53-8db1-44af-b42d-e959c40938ce",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "4a50d681-3087-4eeb-834d-1ef940c42fdc",
+            "name": "Atualizar Produtos",
+            "url": "http://localhost:1337/api/produtos/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-03T03:38:03.786Z",
+            "modified": "2023-10-03T04:50:41.903Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Cenora\",\n    \"Quantidade\": 30,\n    \"Validade\": \"2023-10-27\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1bade1d6-c114-4b45-9161-4b751890ad53",
+            "colId": "de7d59bf-2ed7-45ec-b869-1e902d9bc102",
+            "containerId": "76055c99-881d-47d8-bc6e-e7cf400a958b",
+            "name": "Atualizar Fornecedor",
+            "url": "http://localhost:1337/api/fornecedors/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-03T03:39:41.750Z",
+            "modified": "2023-10-03T05:11:47.767Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"data\": {\n    \"Name\": \"Lol\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

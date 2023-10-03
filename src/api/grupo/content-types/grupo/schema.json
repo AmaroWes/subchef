@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grupos",
+  "info": {
+    "singularName": "grupo",
+    "pluralName": "grupos",
+    "displayName": "Grupo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "produtos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::produto.produto",
+      "inversedBy": "grupos"
+    }
+  }
+}
